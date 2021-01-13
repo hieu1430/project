@@ -1,0 +1,85 @@
+/* Header */
+header{
+    position:absolute;
+    top: 10px;
+    left:50%;
+    transform: translateX();
+    
+}
+header nav ul {
+    border-bottom: 1px solid #5e48488c;
+}
+header nav ul li {
+    text-transform: uppercase;
+    padding: 25px 25px !important;
+    position: relative;
+}
+
+header nav ul li.active::after{
+content: "";
+display: block;
+width: 100%;
+height: 3px;
+position: absolute;
+left: 0;
+bottom: 0;
+background: linear-gradient(to right, orange, yellow);
+}
+
+header nav ul li::after{
+content: "";
+display: block;
+width: 0;
+height: 3px;
+position: absolute;
+left: 0;
+bottom: 0;
+background: linear-gradient(to right, orange, yellow);
+transition: all 0.5s;
+}
+
+header nav ul li:hover::after{
+width: 100%;  
+}
+
+/* Carosel */
+.carousel-inner .item1{
+    background-image: url("./../cinema-layout/img/hero-1.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-inner .carousel-item{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-inner .item1{
+    background-image: url("./../cinema-layout/img/hero-1.jpg");
+}
+
+.carousel-inner .item2{
+    background-image: url("./../cinema-layout/img/hero-2.jpg");
+}
+.carousel-inner .item3{
+    background-image: url("./../cinema-layout/img/hero-3.jpg");
+}
+
+.carousel-indicators li{
+width: 10px;
+height: 10px;
+border-radius:50%;
+border: 1px solid white;
+bacground: transparent;
+}
+
+.carousel-indicators li.active{
+    justify-content: flex-start;
+}
+
+.carousel-indicators{
+    justify-content: flex-start;
+}

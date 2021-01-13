@@ -1,0 +1,5 @@
+col-x: Kích thường màn hình <576px
+col-sm-x: Kích thường màng hình >- 576px
+col-md-x: kích thường màng hình >=768px
+col-lg-x: kích thường màng hình >=992px
+col-xl=x: kích thường màng hình >=1200px
